@@ -19,8 +19,8 @@
         <meta name="twitter:url" content="https://houseofsanctuary.com">
         <meta name="twitter:image" content="https://houseofsanctuary.com/wp-content/uploads/2023/12/NPP05685_HDR-1024x682.jpg">
         <link id="favicon" rel="shortcut icon" href="https://houseofsanctuary.com/wp-content/uploads/2023/12/cropped-Final-Logo-Brand-House-of-Sanctuary-03-150x150.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="assets/style/style.css">
+        <script src="assets/script/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
@@ -32,7 +32,9 @@
         <div class="header bg-pink-900 text-white p-3 flex justify-between items-center sticky top-0 z-10 shadow-xl">
             <div class="logo font-light text-2xl tracking-widest">House of Sanctuary</div>
             <ul class="flex gap-5 font-light uppercase text-sm">
-                <li class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md menu-active">Hotels</li>
+                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="hotel.html">
+                    Hotels
+                </a>
                 <li class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md">Deals</li>
                 <li class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md">Meetings</li>
                 <li class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md">Weedings</li>
@@ -40,21 +42,21 @@
                 <li class="cursor-pointer p-2 bg-white px-5 rounded-md text-pink-800 font-normal">Book Now</li>
             </ul>
         </div>
-        <div class="bg-blue-100 object-cover bg-fixed" style="background-image: url('assets/bg-1.webp');">
+        <div class="bg-blue-100 object-cover bg-fixed" style="background-image: url('assets/images/bg-1.webp');">
             <div class="flex flex-col gap-10 items-center py-72">
                 <div class="text-white fredoka text-center text-5xl">
                     fun, friendly, free-spirited
                 </div>
                 <div class="relative w-2/5">
                     <input type="search" class="w-full py-4 px-5 rounded-md outline-none" placeholder="Where do you want to go?">
-                    <img src="assets/magnifier.svg" class="w-8 h-8 absolute top-3 right-5" />
+                    <img src="assets/images/magnifier.svg" class="w-8 h-8 absolute top-3 right-5" />
                 </div>
             </div>
         </div>
         <div class="relative">
             <div class="flex flex-col gap-20 py-24 mb-96">
                 <div class="flex gap-10 items-center px-64">
-                    <img src="assets/hotel-1.webp" class="w-1/2 h-72 object-cover">
+                    <img src="assets/images/hotel-1.webp" class="w-1/2 h-72 object-cover">
                     <div class="content flex flex-col gap-5 fredoka">
                         <span class="text-pink-900 text-4xl tracking-wider">let fun begin</span>
                         <span class="leading-relaxed text-md">where simplicity and smiles go hand in hand! with affordable rooms and a playful spirit, we are the ultimate choice for comfort and giggles, making us everybody's favorite.</span>
@@ -62,7 +64,7 @@
                 </div>
                 <div class="slide-container mx-0 my-auto flex max-w-[600px]">
                     <div class="flex gap-10 items-center slide absolute px-64">
-                        <img src="assets/hotel-3.jpeg" class="w-[510px] h-96 object-cover">
+                        <img src="assets/images/hotel-3.jpeg" class="w-[510px] h-96 object-cover">
                         <div class="content flex flex-col gap-5 fredoka">
                             <span class="text-pink-900 text-4xl tracking-wider">House of Sanctuary</span>
                             <span class="text-2xl">the great hotel for vacation</span>
@@ -70,7 +72,7 @@
                         </div>
                     </div>
                     <div class="flex gap-10 items-center slide absolute px-64 opacity-0">
-                        <img src="assets/hotel-2.jpeg" class="w-[510px] h-96 object-cover">
+                        <img src="assets/images/hotel-2.jpeg" class="w-[510px] h-96 object-cover">
                         <div class="content flex flex-col gap-5 fredoka">
                             <span class="text-pink-900 text-4xl tracking-wider">House of Sanctuary</span>
                             <span class="text-2xl">strategic location with many tourist attraction</span>
@@ -78,7 +80,7 @@
                         </div>
                     </div>
                     <div class="flex gap-10 items-center slide absolute px-64 opacity-0">
-                        <img src="assets/hotel-1.webp" class="w-[510px] h-96 object-cover">
+                        <img src="assets/images/hotel-1.webp" class="w-[510px] h-96 object-cover">
                         <div class="content flex flex-col gap-5 fredoka">
                             <span class="text-pink-900 text-4xl tracking-wider">House of Sanctuary</span>
                             <span class="text-2xl">Large room for family</span>
@@ -89,8 +91,8 @@
             </div>
             <div class="absolute top-[800px] right-[450px] px-64">
                 <div class="flex gap-5">
-                    <a class="cursor-pointer z-10 border border-pink-900 rounded-full px-3.5 py-1.5 text-pink-900" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="cursor-pointer z-10 border border-pink-900 rounded-full px-3.5 py-1.5 text-pink-900" onclick="changeSlide(1)">&#10095;</a>
+                    <a class="cursor-pointer z-10 border border-white rounded-full px-3.5 py-1.5 text-white" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="cursor-pointer z-10 border border-white rounded-full px-3.5 py-1.5 text-white" onclick="changeSlide(1)">&#10095;</a>
                 </div>
             </div>
         </div>
@@ -102,9 +104,9 @@
                     <span>&#10095;</span>
                 </div>
             </div>
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3 gap-5">
                 <div class="bg-white rounded-md flex flex-col max-w-[22rem] max-h-[500px]">
-                    <img src="assets/travel-1.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
+                    <img src="assets/images/travel-1.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
                     <div class="flex flex-col gap-2 px-4 py-3">
                         <span class="text-sm text-gray-500">lorem ipsum</span>
                         <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
@@ -115,7 +117,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-md flex flex-col max-w-[22rem] max-h-[500px]">
-                    <img src="assets/travel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
+                    <img src="assets/images/travel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
                     <div class="flex flex-col gap-2 px-4 py-3">
                         <span class="text-sm text-gray-500">lorem ipsum</span>
                         <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
@@ -126,7 +128,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-md flex flex-col max-w-[22rem] max-h-[500px]">
-                    <img src="assets/travel-3.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
+                    <img src="assets/images/travel-3.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
                     <div class="flex flex-col gap-2 px-4 py-3">
                         <span class="text-sm text-gray-500">lorem ipsum</span>
                         <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
@@ -141,8 +143,8 @@
         <div class="px-64 py-24">
             <div class="flex items-center rounded-md membership pr-10">
                 <div class="relative">
-                    <img src="assets/travel-1.jpeg" class="w-96 h-48 object-cover rounded-l-md" />
-                    <img src="assets/membership.png" class="w-24 h-24 absolute top-12 left-24">
+                    <img src="assets/images/travel-1.jpeg" class="w-96 h-48 object-cover rounded-l-md" />
+                    <img src="assets/images/membership.png" class="w-24 h-24 absolute top-12 left-24">
                 </div>
                 <span class="text-pink-900 text-6xl fredoka py-3 px-6 text-wrap">everywhere within your hand</span>
                 <button class="px-5 py-2 w-fit whitespace-nowrap border border-pink-900 rounded-md fredoka text-pink-900 hover:bg-pink-100/40" type="button">Join Membership</button>
@@ -157,61 +159,61 @@
                 </div>
                 <div class="grid grid-cols-3 gap-8">
                     <div class="rounded-xl shadow-xl bg-white h-fit min-h-72">
-                        <img src="assets/hotel-1.webp" class="w-full h-64 object-cover rounded-t-md">
+                        <img src="assets/images/hotel-1.webp" class="w-full h-64 object-cover rounded-t-md">
                         <div class="description fedroka px-5 py-5">
                             <div class="text-sm pb-3 font-bold">sanctuary lorem villa ipsum</div>
                             <div class="flex gap-2">
-                                <img src="assets/location.svg" class="w-3 text-pink-900">
+                                <img src="assets/images/location.svg" class="w-3 text-pink-900">
                                 <span class="text-xs font-light">Denpasar, Bali</span>
                             </div>
                         </div>
                     </div>
                     <div class="rounded-xl shadow-xl bg-white h-fit min-h-72">
-                        <img src="assets/hotel-2.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <img src="assets/images/hotel-2.jpeg" class="w-full h-64 object-cover rounded-t-md">
                         <div class="description fedroka px-5 py-5">
                             <div class="text-sm pb-3 font-bold">sanctuary lorem villa ipsum</div>
                             <div class="flex gap-2">
-                                <img src="assets/location.svg" class="w-3 text-pink-900">
+                                <img src="assets/images/location.svg" class="w-3 text-pink-900">
                                 <span class="text-xs font-light">Denpasar, Bali</span>
                             </div>
                         </div>
                     </div>
                     <div class="rounded-xl shadow-xl bg-white h-fit min-h-72">
-                        <img src="assets/hotel-3.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <img src="assets/images/hotel-3.jpeg" class="w-full h-64 object-cover rounded-t-md">
                         <div class="description fedroka px-5 py-5">
                             <div class="text-sm pb-3 font-bold">sanctuary lorem villa ipsum</div>
                             <div class="flex gap-2">
-                                <img src="assets/location.svg" class="w-3 text-pink-900">
+                                <img src="assets/images/location.svg" class="w-3 text-pink-900">
                                 <span class="text-xs font-light">Denpasar, Bali</span>
                             </div>
                         </div>
                     </div>
                     <div class="rounded-xl shadow-xl bg-white h-fit min-h-72">
-                        <img src="assets/travel-1.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <img src="assets/images/travel-1.jpeg" class="w-full h-64 object-cover rounded-t-md">
                         <div class="description fedroka px-5 py-5">
                             <div class="text-sm pb-3 font-bold">sanctuary lorem villa ipsum</div>
                             <div class="flex gap-2">
-                                <img src="assets/location.svg" class="w-3 text-pink-900">
+                                <img src="assets/images/location.svg" class="w-3 text-pink-900">
                                 <span class="text-xs font-light">Denpasar, Bali</span>
                             </div>
                         </div>
                     </div>
                     <div class="rounded-xl shadow-xl bg-white h-fit min-h-72">
-                        <img src="assets/travel-2.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <img src="assets/images/travel-2.jpeg" class="w-full h-64 object-cover rounded-t-md">
                         <div class="description fedroka px-5 py-5">
                             <div class="text-sm pb-3 font-bold">sanctuary lorem villa ipsum</div>
                             <div class="flex gap-2">
-                                <img src="assets/location.svg" class="w-3 text-pink-900">
+                                <img src="assets/images/location.svg" class="w-3 text-pink-900">
                                 <span class="text-xs font-light">Denpasar, Bali</span>
                             </div>
                         </div>
                     </div>
                     <div class="rounded-xl shadow-xl bg-white h-fit min-h-72">
-                        <img src="assets/travel-3.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <img src="assets/images/travel-3.jpeg" class="w-full h-64 object-cover rounded-t-md">
                         <div class="description fedroka px-5 py-5">
                             <div class="text-sm pb-3 font-bold">sanctuary lorem villa ipsum</div>
                             <div class="flex gap-2">
-                                <img src="assets/location.svg" class="w-3 text-pink-900">
+                                <img src="assets/images/location.svg" class="w-3 text-pink-900">
                                 <span class="text-xs font-light">Denpasar, Bali</span>
                             </div>
                         </div>
@@ -229,55 +231,55 @@
             </div>
             <div class="grid grid-cols-3 gap-8">
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-1.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-1.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-2.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-2.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-3.avif" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-3.avif" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-4.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-4.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-1.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-1.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-2.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-2.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-3.avif" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-3.avif" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-2.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-2.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
                 </div>
                 <div class="relative cursor-pointer">
-                    <img src="assets/vacation-4.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
+                    <img src="assets/images/vacation-4.jpeg" class="h-80 w-96 object-cover rounded-md hover:contrast-50">
                     <div class="absolute bottom-5 left-5 fredoka">
                         <button type="button" class="bg-pink-900 text-sm font-light px-5 py-1.5 text-white rounded-md hover:bg-pink-800">@sanctuary</button>
                     </div>
@@ -292,9 +294,9 @@
                     <span>&#10095;</span>
                 </div>
             </div>
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3 gap-5">
                 <div class="flex flex-col max-w-[22rem] max-h-[500px]">
-                    <img src="assets/travel-1.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-md">
+                    <img src="assets/images/travel-1.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-md">
                     <div class="flex flex-col gap-2 px-4 py-3">
                         <span class="text-sm text-gray-500">lorem ipsum</span>
                         <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
@@ -305,7 +307,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col max-w-[22rem] max-h-[500px]">
-                    <img src="assets/travel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-md">
+                    <img src="assets/images/travel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-md">
                     <div class="flex flex-col gap-2 px-4 py-3">
                         <span class="text-sm text-gray-500">lorem ipsum</span>
                         <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
@@ -316,7 +318,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col max-w-[22rem] max-h-[500px]">
-                    <img src="assets/travel-3.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-md">
+                    <img src="assets/images/travel-3.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-md">
                     <div class="flex flex-col gap-2 px-4 py-3">
                         <span class="text-sm text-gray-500">lorem ipsum</span>
                         <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
@@ -334,13 +336,13 @@
                     <div class="text-white text-2xl fedroka font-medium tracking-wider">Stay connected with sanctuary</div>
                     <div class="flex gap-5">
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/facebook.svg" class="w-10 h-10 object-cover">
+                            <img src="assets/images/facebook.svg" class="w-10 h-10 object-cover">
                         </div>
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/instagram.png" class="w-10 h-10 object-cover">
+                            <img src="assets/images/instagram.png" class="w-10 h-10 object-cover">
                         </div>
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/x.svg" class="w-10 h-10 object-cover">
+                            <img src="assets/images/x.svg" class="w-10 h-10 object-cover">
                         </div>
                     </div>
                 </div>
@@ -351,14 +353,14 @@
                     </div>
                     <div class="flex gap-5">
                         <div class="flex items-center rounded-md px-3 py-1 border border-white text-white hover:bg-white/20 cursor-pointer">
-                            <img src="assets/apple.svg" class="w-8 h-8 object-cover">
+                            <img src="assets/images/apple.svg" class="w-8 h-8 object-cover">
                             <div class="flex flex-col pl-5">
                                 <span class="text-xs">Download on the</span>
                                 <span>App Store</span>
                             </div>
                         </div>
                         <div class="flex items-center rounded-md px-3 py-1 border border-white text-white hover:bg-white/20 cursor-pointer">
-                            <img src="assets/playstore.svg" class="w-8 h-8 object-cover">
+                            <img src="assets/images/playstore.svg" class="w-8 h-8 object-cover">
                             <div class="flex flex-col pl-5">
                                 <span class="text-xs uppercase">Get it on</span>
                                 <span>Google Play</span>
@@ -387,19 +389,19 @@
                     <div>Follow our journey</div>
                     <div class="flex gap-2">
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/linkedin.svg" class="w-8 h-8 object-cover">
+                            <img src="assets/images/linkedin.svg" class="w-8 h-8 object-cover">
                         </div>
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/facebook.svg" class="w-8 h-8 object-cover">
+                            <img src="assets/images/facebook.svg" class="w-8 h-8 object-cover">
                         </div>
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/instagram.png" class="w-8 h-8 object-cover">
+                            <img src="assets/images/instagram.png" class="w-8 h-8 object-cover">
                         </div>
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/x.svg" class="w-8 h-8 object-cover">
+                            <img src="assets/images/x.svg" class="w-8 h-8 object-cover">
                         </div>
                         <div class="p-1 rounded-md cursor-pointer hover:bg-white/10">
-                            <img src="assets/youtube.svg" class="w-8 h-8 object-cover">
+                            <img src="assets/images/youtube.svg" class="w-8 h-8 object-cover">
                         </div>
                     </div>
                 </div>
