@@ -20,16 +20,8 @@
         <meta name="twitter:image" content="https://houseofsanctuary.com/wp-content/uploads/2023/12/NPP05685_HDR-1024x682.jpg">
         <link id="favicon" rel="shortcut icon" href="https://houseofsanctuary.com/wp-content/uploads/2023/12/cropped-Final-Logo-Brand-House-of-Sanctuary-03-150x150.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/style/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- map -->
-        <link rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-            crossorigin=""
-        />
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         <script src="assets/script/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -40,7 +32,7 @@
         <div class="header bg-pink-900 text-white p-3 flex justify-between items-center sticky top-0 z-50 shadow-xl">
             <a class="logo font-light text-2xl tracking-widest" href="index.html">House of Sanctuary</a>
             <ul class="flex gap-5 font-light uppercase text-sm">
-                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md menu-active" href="hotel.html">
+                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="hotel.html">
                     Hotels
                 </a>
                 <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="deal.html">
@@ -52,7 +44,7 @@
                 <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="weeding.html">
                     Weedings
                 </a>
-                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="news.html">
+                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md menu-active" href="news.html">
                     News
                 </a>
                 <a class="cursor-pointer p-2 bg-white px-5 rounded-md text-pink-800 font-normal" href="#">
@@ -60,101 +52,6 @@
                 </a>
             </ul>
         </div>
-        <main>
-            <div class="h-[600px] max-h-[700px] z-10" id="map"></div>
-            <div class="px-64 py-24 flex flex-col gap-10">
-                <div class="fredoka flex items-center justify-between">
-                    <span class="text-pink-900 text-4xl tracking-wider">it's where the fun start</span>
-                    <div class="flex gap-4">
-                        <button type="button" class="rounded-md bg-pink-900 text-white px-5 py-2.5 text-sm">Indonesia</button>
-                        <button type="button" class="rounded-md bg-white text-pink-900 border border-pink-900 px-5 py-2.5 text-sm">Upcoming</button>
-                    </div>
-                </div>
-                <div class="grid grid-cols-3 gap-8">
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/bali.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Jimbaran</span>
-                                <span>Bali</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/yogya.png" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Malioboro</span>
-                                <span>Daerah Istimewa Yogyakarta</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/lombok.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Lombok</span>
-                                <span>Nusa Tenggara Barat</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/semarang.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Semarang</span>
-                                <span>Jawa Tengah</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/banyuwangi.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Banyuwangi</span>
-                                <span>Jawa Timur</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/jayapura.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Jayapura</span>
-                                <span>Papua</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/sumbawa.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Pink Beach</span>
-                                <span>Sumbawa</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/aceh.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Aceh</span>
-                                <span>Aceh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative drop-shadow-lg rounded-xl cursor-pointer max-w-96 max-h-64">
-                        <img src="assets/images/pontianak.jpeg" class="w-96 h-64 object-cover transition ease-in-out rounded-xl hover:scale-105 hover:duration-300 hover:contrast-50">
-                        <div class="absolute bottom-5 left-5">
-                            <div class="flex flex-col text-white fedroka">
-                                <span class="text-2xl font-bold">Pontianak</span>
-                                <span>Kalimantan Barat</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
         <footer class="bg-pink-900 px-64 flex flex-col">
             <div class="flex justify-between py-5 border-b border-white/30">
                 <div class="flex flex-col gap-5">
@@ -252,5 +149,4 @@
             </div>
         </footer>
     </body>
-    <script src="assets/script/map.js"></script>
 </html>

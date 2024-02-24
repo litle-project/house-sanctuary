@@ -35,10 +35,10 @@
                 <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="hotel.html">
                     Hotels
                 </a>
-                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md menu-active" href="deal.html">
+                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="deal.html">
                     Deals
                 </a>
-                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="meeting.html">
+                <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md menu-active" href="meeting.html">
                     Meetings
                 </a>
                 <a class="cursor-pointer p-2 hover:bg-white/10 px-5 rounded-md" href="weeding.html">
@@ -52,133 +52,113 @@
                 </a>
             </ul>
         </div>
-        <main>
-            <div class="bg-blue-100 bg-center bg-cover bg-no-repeat w-full h-[600px]" style="background-image: url('assets/images/deal.jpeg');">
-                <div class="flex flex-col gap-10 items-center py-48">
-                    <div class="text-white fredoka text-center text-5xl">
-                        steals & deals
-                    </div>
-                    <div class="flex gap-3 bg-white p-4 w-2/5 rounded-xl">
-                        <input type="text" class="w-full px-5 rounded-md outline-none" placeholder="type in title, location, or hotel name?">
-                        <select class="outline-none border border-pink-900 fedroka text-sm rounded-md py-2 px-4 font-medium">
-                            <option>All categories</option>
-                        </select>
-                        <button class="py-2 px-8 font-medium bg-pink-900 text-white rounded-md">Search</button>
-                    </div>
+        <main class="px-64">
+            <div class="flex flex-col gap-20 py-24">
+                <img src="assets/images/meeting.jpeg" class="w-full h-96 object-cover rounded-xl shadow-md">
+                <div class="grid grid-cols-9 grid-flow-row gap-5">
+                    <span class="bg-pink-900 rounded-full text-white text-center py-3">Jakarta</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Bekasi</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Semarang</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Solo</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Surabaya</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Lombok</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Sumbawa</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Papua</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Aceh</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap col-span-2">Sulawesi Utara</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap col-span-2">Sulawesi Barat</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap col-span-2">Sulawesi Timur</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Malang</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Situbondo</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Banyuwangi</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap col-span-2">Sulawesi Selatan</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap">Bali</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap col-span-2">Kalimantan Barat</span>
+                    <span class="bg-lime-200 rounded-full text-pink-900/50 text-center py-3 px-5 w-full whitespace-nowrap col-span-2">Kalimantan Timur</span>
                 </div>
-            </div>
-            <div class="flex flex-col gap-10 bg-white px-64 py-10">
-                <div class="flex justify-between items-end text-white fredoka pr-10">
-                    <span class="text-4xl tracking-wider">special for you</span>
-                    <div class="cursor-pointer flex gap-2 text-sm">
-                        <span class="hover:underline">view more details</span>
-                        <span>&#10095;</span>
-                    </div>
-                </div>
-                <div class="grid grid-cols-3 gap-5">
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/travel-1.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Indulge in a Blissful Getaway Without Going Far!</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="rounded-xl drop-shadow bg-white h-fit min-h-72">
+                        <img src="assets/images/hotel-1.webp" class="w-full h-64 object-cover rounded-t-md">
+                        <div class="description fedroka px-5 py-5 flex flex-col gap-5">
+                            <div class="text-sm text-center font-medium text-gray-500">sanctuary lorem villa ipsum</div>
+                            <div class="flex justify-around text-xs">
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Whatsapp</button>
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Contact Us</button>
+                            </div>
+                            <div class="text-center text-pink-900 hover:underline font-medium">
+                                view details
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl4">
-                        <img src="assets/images/travel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Flight for less with Garuda Indonesia! Enjoy up to 10% off at our selected hotels until November 21, 2024.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
+                    <div class="rounded-xl drop-shadow bg-white h-fit min-h-72">
+                        <img src="assets/images/hotel-2.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <div class="description fedroka px-5 py-5 flex flex-col gap-5">
+                            <div class="text-sm text-center font-medium text-gray-500">sanctuary lorem villa ipsum</div>
+                            <div class="flex justify-around text-xs">
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Whatsapp</button>
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Contact Us</button>
+                            </div>
+                            <div class="text-center text-pink-900 hover:underline font-medium">
+                                view details
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/travel-3.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
+                    <div class="rounded-xl drop-shadow bg-white h-fit min-h-72">
+                        <img src="assets/images/hotel-3.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <div class="description fedroka px-5 py-5 flex flex-col gap-5">
+                            <div class="text-sm text-center font-medium text-gray-500">sanctuary lorem villa ipsum</div>
+                            <div class="flex justify-around text-xs">
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Whatsapp</button>
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Contact Us</button>
+                            </div>
+                            <div class="text-center text-pink-900 hover:underline font-medium">
+                                view details
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/vacation-1.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
+                    <div class="rounded-xl drop-shadow bg-white h-fit min-h-72">
+                        <img src="assets/images/travel-1.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <div class="description fedroka px-5 py-5 flex flex-col gap-5">
+                            <div class="text-sm text-center font-medium text-gray-500">sanctuary lorem villa ipsum</div>
+                            <div class="flex justify-around text-xs">
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Whatsapp</button>
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Contact Us</button>
+                            </div>
+                            <div class="text-center text-pink-900 hover:underline font-medium">
+                                view details
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/vacation-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
+                    <div class="rounded-xl drop-shadow bg-white h-fit min-h-72">
+                        <img src="assets/images/travel-2.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <div class="description fedroka px-5 py-5 flex flex-col gap-5">
+                            <div class="text-sm text-center font-medium text-gray-500">sanctuary lorem villa ipsum</div>
+                            <div class="flex justify-around text-xs">
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Whatsapp</button>
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Contact Us</button>
+                            </div>
+                            <div class="text-center text-pink-900 hover:underline font-medium">
+                                view details
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/vacation-3.avif" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/hotel-1.webp" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/hotel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
-                        <img src="assets/images/hotel-3.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
-                        <div class="flex flex-col gap-2 px-4 py-3">
-                            <span class="text-sm text-gray-500">lorem ipsum</span>
-                            <span class="text-2xl text-pink-900 fredoka">Travel Ipsum lorem</span>
-                            <span class="text-gray-400 line-clamp-3 h-[4.5rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima porro reiciendis ullam esse ipsa saepe inventore harum ut iusto quaerat. Blanditiis in eaque maiores expedita fugiat, quasi illum provident ipsum.</span>
-                            <button type="button" class="fedroka w-fit rounded-md bg-pink-900 py-2 px-5 text-white text-sm mt-5">
-                                Learn more
-                            </button>
+                    <div class="rounded-xl drop-shadow bg-white h-fit min-h-72">
+                        <img src="assets/images/travel-3.jpeg" class="w-full h-64 object-cover rounded-t-md">
+                        <div class="description fedroka px-5 py-5 flex flex-col gap-5">
+                            <div class="text-sm text-center font-medium text-gray-500">sanctuary lorem villa ipsum</div>
+                            <div class="flex justify-around text-xs">
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Whatsapp</button>
+                                <button class="text-white bg-pink-900 hover:text-pink-900 hover:bg-white hover:border hover:border-pink-900 px-6 py-3 rounded-full">Contact Us</button>
+                            </div>
+                            <div class="text-center text-pink-900 hover:underline font-medium">
+                                view details
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="bg-pink-900 px-64 flex flex-col mt-24">
+        <footer class="bg-pink-900 px-64 flex flex-col">
             <div class="flex justify-between py-5 border-b border-white/30">
                 <div class="flex flex-col gap-5">
                     <div class="text-white text-2xl fedroka font-medium tracking-wider">Stay connected with sanctuary</div>
