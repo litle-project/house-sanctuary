@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Website\HomeController;
+use App\Http\Controllers\Website\HotelController;
+use App\Http\Controllers\Website\DealController;
+use App\Http\Controllers\Website\MeetingController;
+use App\Http\Controllers\Website\WeedingController;
+use App\Http\Controllers\Website\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/hotel', [HotelController::class, 'index']);
+Route::get('/deal', [DealController::class, 'index']);
+Route::get('/meeting', [MeetingController::class, 'index']);
+Route::get('/weeding', [WeedingController::class, 'index']);
+Route::get('/news', [NewsController::class, 'index']);
