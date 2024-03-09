@@ -15,5 +15,9 @@ use App\Http\Controllers\Dashboard\AuthController;
 |
 */
 
-Route::get('/', [MainController::class, 'index']);
+// authentication
 Route::get('/login', [AuthController::class, 'page']);
+Route::post('/login', [AuthController::class, 'login']);
+
+// dashboard
+Route::get('/', [MainController::class, 'index']);

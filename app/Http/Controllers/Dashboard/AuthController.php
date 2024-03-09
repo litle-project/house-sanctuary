@@ -18,12 +18,12 @@ class AuthController extends Controller
         return new PageResponse;
     }
 
-    public function login(LoginRequest $request)
+    public function login(Request $request)
     {
         return new LoginResponse;
     }
 
-    public function logout(LogoutRequest $request)
+    public function logout(Request $request)
     {
         return new LogoutResponse;
     }
