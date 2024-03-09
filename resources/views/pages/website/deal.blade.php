@@ -36,7 +36,7 @@
                     </button>
                 </div>
             </div>
-            <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl4">
+            <div class="bg-white rounded-xl flex flex-col max-w-[22rem] max-h-[500px] shadow-xl">
                 <img src="assets/images/travel-2.jpeg" class="w-[22rem] h-64 min-h-64 object-cover rounded-t-md">
                 <div class="flex flex-col gap-2 px-4 py-3">
                     <span class="text-sm text-gray-500">lorem ipsum</span>
