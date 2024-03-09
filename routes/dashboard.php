@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dashboard\MainController;
+use App\Http\Controllers\Dashboard\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,4 @@ use App\Http\Controllers\Dashboard\MainController;
 */
 
 Route::get('/', [MainController::class, 'index']);
+Route::get('/login', [AuthController::class, 'page']);
