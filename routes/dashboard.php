@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Dashboard\MainController;
+use App\Http\Controllers\Dashboard\BannerController;
 use App\Http\Controllers\Dashboard\AuthController;
 
 /*
@@ -19,5 +19,9 @@ use App\Http\Controllers\Dashboard\AuthController;
 Route::get('/login', [AuthController::class, 'page']);
 Route::post('/login', [AuthController::class, 'login']);
 
-// dashboard
-Route::get('/', [MainController::class, 'index']);
+
+Route::group(['middleware' => 'auth'], function () {
+
+    // dashboard
+    Route::get('/banner', [BannerController::class, 'index']);
+});

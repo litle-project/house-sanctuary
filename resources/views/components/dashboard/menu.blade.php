@@ -17,8 +17,18 @@
                 </div>
             </div>
         </a>
+        <a class="menu" href="{{ url('/dashboard/banner') }}">
+            <div id="banner" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('banner', this)">
+                <div class="flex items-center">
+                    <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
+                        <i class="fas fa-image" aria-hidden="true"></i>
+                    </div>
+                    <p class="block antialiased font-sans text-base leading-relaxed text-blue-grey-900 font-bold capitalize">Manage Banner</p>
+                </div>
+            </div>
+        </a>
         <div class="menu">
-            <div class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('homepage', this)">
+            <div id="homepage" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('homepage', this)">
                 <div class="flex items-center">
                     <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
                         <i class="fas fa-home" aria-hidden="true"></i>
@@ -30,11 +40,6 @@
                 </div>
             </div>
             <ul class="hidden children" id="homepage">
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Banner Section</p>
-                    </a>
-                </li>
                 <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
                     <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
                         <p class="leading-relaxed capitalize">Special Section</p>
@@ -58,124 +63,54 @@
             </ul>
         </div>
         <div class="menu">
-            <div class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('hotel', this)">
+            <div id="hotel" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('hotel', this)">
                 <div class="flex items-center">
                     <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
                         <i class="fas fa-hotel" aria-hidden="true"></i>
                     </div>
                     <p class="block antialiased font-sans text-base leading-relaxed text-blue-grey-900 font-bold capitalize">Manage Hotel</p>
                 </div>
-                <div class="px-2">
-                    <i class="fas fa-chevron-up" id="arrow-hotel" aria-hidden="true"></i>
-                </div>
             </div>
-            <ul class="hidden children" id="hotel">
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Location</p>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="menu">
-            <div class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('deal', this)">
+            <div id="deal" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('deal', this)">
                 <div class="flex items-center">
                     <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
                         <i class="fas fa-percent" aria-hidden="true"></i>
                     </div>
                     <p class="block antialiased font-sans text-base leading-relaxed text-blue-grey-900 font-bold capitalize">Manage Deal</p>
                 </div>
-                <div class="px-2">
-                    <i class="fas fa-chevron-up" id="arrow-deal" aria-hidden="true"></i>
-                </div>
             </div>
-            <ul class="hidden children" id="deal">
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Banner</p>
-                    </a>
-                </li>
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Content</p>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="menu">
-            <div class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('meeting', this)">
+            <div id="meeting" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('meeting', this)">
                 <div class="flex items-center">
                     <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
                         <i class="fas fa-users" aria-hidden="true"></i>
                     </div>
                     <p class="block antialiased font-sans text-base leading-relaxed text-blue-grey-900 font-bold capitalize">Manage Meeting Room</p>
                 </div>
-                <div class="px-2">
-                    <i class="fas fa-chevron-up" id="arrow-meeting" aria-hidden="true"></i>
-                </div>
             </div>
-            <ul class="hidden children" id="meeting">
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Banner</p>
-                    </a>
-                </li>
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Content</p>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="menu">
-            <div class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('weeding', this)">
+            <div id="weeding" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('weeding', this)">
                 <div class="flex items-center">
                     <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
                         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     </div>
                     <p class="block antialiased font-sans text-base leading-relaxed text-blue-grey-900 font-bold capitalize">Manage Weeding Place</p>
                 </div>
-                <div class="px-2">
-                    <i class="fas fa-chevron-up" id="arrow-weeding" aria-hidden="true"></i>
-                </div>
             </div>
-            <ul class="hidden children" id="weeding">
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Banner</p>
-                    </a>
-                </li>
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Content</p>
-                    </a>
-                </li>
-            </ul>
         </div>
         <div class="menu">
-            <div class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('news', this)">
+            <div id="news" class="menu-parent flex justify-between items-center hover:bg-gray-100 p-2 cursor-pointer" onclick="toggle('news', this)">
                 <div class="flex items-center">
                     <div class="grid mr-3 text-xs text-white rounded-lg place-items-center w-7 h-7 bg-gradient-to-tr from-pink-400 to-pink-600">
                         <i class="fas fa-newspaper" aria-hidden="true"></i>
                     </div>
                     <p class="block antialiased font-sans text-base leading-relaxed text-blue-grey-900 font-bold capitalize">Manage News</p>
                 </div>
-                <div class="px-2">
-                    <i class="fas fa-chevron-up" id="arrow-news" aria-hidden="true"></i>
-                </div>
             </div>
-            <ul class="hidden children" id="news">
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Banner</p>
-                    </a>
-                </li>
-                <li class="hover:bg-gray-100 py-2 pl-12 pr-2">
-                    <a href="/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/">
-                        <p class="leading-relaxed capitalize">Content</p>
-                    </a>
-                </li>
-            </ul>
         </div>
     </div>
 </aside>

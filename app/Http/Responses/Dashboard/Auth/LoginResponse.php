@@ -51,6 +51,10 @@ class LoginResponse implements Responsable
             throw new \Exception("Invalid Email or password", 1);
         }
 
-        return true;
+        $token = Hash::make($user->email);
+        $user->update([ 'token' => $token ]);
+
+        return redirect('dashboard')
+            ->withCookie(cookie('token', $token, 1440));
     }
 }
